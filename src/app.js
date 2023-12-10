@@ -14,7 +14,6 @@ const botaoTexto = document.getElementById("botaoTexto");
 
 
 
-
 function gerarQrcode() {
   color1 = document.getElementById("color1").value;
   color2 = document.getElementById("color2").value;
@@ -24,7 +23,8 @@ function gerarQrcode() {
   check = document.getElementById("check");
 
   if (check.checked) {
-    document.querySelector(`canvas`).style.overflow = `hidden`
+    document.getElementById("print").style.width = "150px";
+  
     qr = new QRCode(document.getElementById("qr"), {
       text: input,
       colorDark: `white`,
@@ -34,6 +34,7 @@ function gerarQrcode() {
     });
 
   } else if (pequeno.checked) { 
+    document.getElementById("print").style.width = "200px";
     qr = new QRCode(document.getElementById("qr"), {
       text: input,
       colorDark: color1,
@@ -42,7 +43,7 @@ function gerarQrcode() {
       height: 200,
     });
   } else if (grande.checked) {
- 
+    document.getElementById("print").style.width = "300px";
   
     qr = new QRCode(document.getElementById("qr"), {
       text: input,
@@ -52,7 +53,7 @@ function gerarQrcode() {
       height: 350,
     });
   } else if (medio.checked) {
-    
+    document.getElementById("print").style.width = "300px";
     qr = new QRCode(document.getElementById("qr"), {
       text: input,
       colorDark: color1,
@@ -183,7 +184,7 @@ function mensagemDevazio() {
 
 
 
-//funcao para exibir a mensagem de sucesso.
+
 function exibirToastSucesso() {
   Swal.fire({
     icon: "success",

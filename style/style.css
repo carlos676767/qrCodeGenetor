@@ -46,7 +46,9 @@
   width: 300px;
 }
 
-
+#print{
+  margin-left: 75px;
+}
 
 .escolhas{
   width: 300px;
@@ -105,7 +107,17 @@ footer{
 #print{
   display: none;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
 }
+
+
+  
 
 
 #abrir {
@@ -617,6 +629,16 @@ button:hover {
     text-align: center;
     margin-left: auto;
 
+  }
+
+  #print{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
   }
 
   .escolhas{
