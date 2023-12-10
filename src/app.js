@@ -80,44 +80,35 @@ function mudarPlacelhoderParaEmail() {
 
 
 
-
-
-
-
-
 function MostrarIconeEmail() {
   const email = (document.getElementById(`email`).style.display = `block`);
   return {email}
 }
 
 function ocultarEwifiEtexto() {
-  document.getElementById(`wifi`).style.display = `none`;
-  document.getElementById(`texto`).style.display = `none`;
+  document.getElementById("wifi").style.display = "none";
+  document.getElementById("texto").style.display = "none";
 }
 
 function ocultarTextoEmail() {
-  document.getElementById(`texto`).style.display = `none`;
-  document.getElementById(`email`).style.display = `none`
+  document.getElementById("texto").style.display = "none";
+  document.getElementById("email").style.display = "none";;
 }
 
 
 function ocultarWifiEmail() {
-  document.getElementById(`wifi`).style.display = `none`;
-  document.getElementById(`email`).style.display = `none`;
+  document.getElementById("wifi").style.display = "none";
+  document.getElementById("email").style.display = "none";
 }
 
 function mostrarWifi() {
-  const wifi = (document.getElementById(`wifi`).style.display = `block`);
+  const wifi = (document.getElementById(`wifi`).style.display = "block");
   return wifi;
 }
 
-
-
 function mudarPlacelhoderparaWifi() {
-  document.getElementById(`input`).placeholder = "Digite sua senha do wifi";
+  document.getElementById("input").placeholder = "Digite sua senha do wifi";
 }
-
-
 
 
 botaoWifi.addEventListener("click", function () {
@@ -128,7 +119,7 @@ botaoWifi.addEventListener("click", function () {
 
 
 function mostrarIconeTexto() {
-  const texto = document.getElementById(`texto`).style.display = `block`
+  const texto = document.getElementById(`texto`).style.display = "block"
   return texto
 }
 
@@ -151,9 +142,6 @@ emais.addEventListener("click", function () {
 });
 
 
-
-
-//chama as funcoes pra quando clicar no botao
 botao.addEventListener("click", function () {
   input = document.getElementById("input").value;
   if (input === "") {
@@ -170,16 +158,12 @@ botao.addEventListener("click", function () {
 
 
 
-
-//cria uma funcao que some a imagem
 function sumirImg() {
   img.style.display = "none";
 }
 
 
 
-
-//cria uma funcao que limpa
 function limpar() {
   document.getElementById("tela").innerHTML = "";
   img.style.display = "none";
@@ -187,8 +171,6 @@ function limpar() {
 
 
 
-
-//funcao para aparecer a mensagem de vazio.
 function mensagemDevazio() {
   Swal.fire({
     title: "Campo vazio!",
@@ -211,7 +193,6 @@ function exibirToastSucesso() {
 
 
 
-
 function capturar() {
   html2canvas(document.getElementById("capture")).then(function (canvas) {
     let dataURL = canvas.toDataURL();
@@ -223,35 +204,26 @@ function capturar() {
 }
 
 
-
 function exibirPrint() {
   retirarPrint.style.display = "block";
 }
 
 
-
-
-retirarPrint.addEventListener(`click`, function () {
+retirarPrint.addEventListener("click", function () {
   capturar();
 });
 
 
 
-
 function abrirDiloag() {
-  dialog.style.display = `block`;
+  dialog.style.display = "block";
 }
 
 
-
-
 const fecharDialog = document.getElementById("fechardialog");
-
 fecharDialog.addEventListener("click", function () {
-  dialog.style.display = `none`;
+  dialog.style.display = "none";
 });
-
-
 
 function botaoSumir() {
   botao.style.display = "none";
