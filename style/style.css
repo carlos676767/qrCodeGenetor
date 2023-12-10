@@ -12,34 +12,46 @@
   margin-left: -220px;
   height: 100vh;
   overflow: hidden;
-  position: absolute;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  overflow: hidden;
   margin-left: 200px;
 }
 
 .qrcodes{
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content:center ;
   flex-direction: column;
   text-align: center;
   width: 500px;
   overflow: hidden;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
+
+
+
+#email{
+  display: none;
+}
+
+#wifi{
+  display: none;
+}
+
+#texto {
+  display: none;
+}
+
 
 #img{
   width: 300px;
 }
 
-#botao {
-  width: 60%;
-}
 
+
+.escolhas{
+  width: 300px;
+  overflow: hidden;
+}
 
 .container {
   display: flex;
@@ -92,16 +104,23 @@ footer{
 
 #print{
   display: none;
+  width: 100%;
 }
 
 
 #abrir {
   background-color: #11ab7c;
 }
+
 .filha {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: absolute;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 
@@ -188,6 +207,8 @@ dialog, .texto{
 #qr {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: -200px;
 }
@@ -220,8 +241,26 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.opcoes ul {
+  margin-bottom: 10px; 
+  list-style: none; 
+  color: black;
+}
+
+.opcoes li {
+  display: flex; 
+  align-items: center; 
+  color: black;
+  display: inline-block;
+}
 
 
+
+
+
+canvas{
+  overflow: hidden;
+}
 
 
 input[type="checkbox"] {
@@ -302,7 +341,10 @@ input[type="color"]::-webkit-color-swatch {
   padding: 5px;
   border-radius: 20px;
 }
-
+#componentes{
+  display: flex;
+  flex-direction: column;
+}
 #input::placeholder {
   color: black;
 }
@@ -405,7 +447,10 @@ button:hover {
 .checkbox {
   display: none;
 }
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 1000px) {
   .menu {
     display: block;
     display: flex;
@@ -503,7 +548,7 @@ button:hover {
     justify-content: center;
     width: auto;
     overflow: visible;
-    margin-top: -90px;
+    margin-left: -30px;
     
   }
   
@@ -511,9 +556,7 @@ button:hover {
     width: 300px;
   }
   
-  #botao {
-    width: 70%;
-  }
+  
   
   .mae{
     display: flex;
@@ -538,6 +581,9 @@ button:hover {
     padding: 60px;
   }
 
+
+
+  
 .informacoes, p{
   display: flex;
   align-items: center;
@@ -558,18 +604,10 @@ button:hover {
     margin-right: auto;
     margin-top: 550px;
   }
- 
-}
 
-@media (width: 320px) {
-  .mulherqrcode {
-    width: 300px;
-    object-fit: cover;
+  .opcoes li,i{
+    flex-wrap: nowrap;
+ 
   }
-
- .mae{
-  width: 100%;
- }
- 
-
 }
+
