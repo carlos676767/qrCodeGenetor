@@ -243,7 +243,7 @@ const gerarPdf = () => {
   };
 
   html2pdf()
-    .from(document.getElementById("capture"))
+    .from(document.getElementById("qr"))
     .set(options)
     .outputPdf(function (pdf) {})
     .save();
