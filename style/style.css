@@ -27,8 +27,13 @@
 
 }
 
+#pdf{
+  display: none;
+}
 
-
+#teee{
+  color: #00bf9a;
+}
 #email{
   display: none;
 }
@@ -183,7 +188,7 @@ h2{
 
 
 
-dialog{
+#projeto, #historicoDiloag{
   display: flex;
   display: none;
   flex-direction: column;
@@ -197,7 +202,7 @@ dialog{
   right: 0;
 }
 
-dialog, .texto{
+#projeto, .texto{
   color: black;
 }
 
@@ -611,7 +616,7 @@ button:hover {
     font-size: 15px;
   }
 
-  dialog{
+  #projeto, #historicoDiloag{
     margin-left: auto;
     margin-right: auto;
     margin-top: 550px;

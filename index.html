@@ -21,14 +21,16 @@
             <label for="checkbox" class="label-menu" id="label"><span class="hamburguer"></span></label>
             <ul class="menu">
                 <li><a href="pages/faq.html" rel="next"> <strong>Faq</strong></a></li>
-                <li><a href="#" rel="next"><strong>Sobre</strong></a></li>
-                <li><a href="#" rel="next"><strong>Blog</strong></a></li>
+                <li><a href="#" rel="next" id="historico"><strong>historico</strong></a></li>
+                <li><a href="pages/atalhos.html" rel="next"><strong>atalhos</strong></a></li>
                 <li><a href="#" rel="next"><strong>Suporte</strong></a></li>
                 <li><button style="background-color: #f5b759;"><i class="fas fa-arrow-right"></i>Login</button></li>
                 <li><button><i class="fas fa-arrow-right"></i>Registrar</button></li>
             </ul>
         </nav>
     </header>
+
+ 
 
     <main class="mae">
       <div class="filha" id="filha">
@@ -58,22 +60,38 @@
       </div>
     
 
+      <dialog id="historicoDiloag">
+        <p>Central de historicos</p>
+        <div class="estaticas" id="estaticas">
+          <p id="hispe"> Em breve</p>
+          <p id="hispe2"></p>
+          <p id="hispe3"></p>
+          <p id="hispe4"></p>
+        </div>
+        <div class="botoes">
+          <button id="fecharHistorico">Fechar Historico</button>
+        </div>
+      </dialog>
+
+
 
       <section class="qrcodes">
           <div id="capture">
             <span id="qr"></span>
         </div>
+        
      <div class="escolhas">
       <img src="img/qrcode.png" alt="img" id="img">
       <button id="botao"><i class="fas fa-eye"></i>Gerar QRCode</button>
       <button id="print"><i class="fa-solid fa-download"></i>Download</button>
+      <button id="pdf"> <i class="fa-solid fa-file-pdf"></i>Gerar PDF</button>
      </div>
       </section>
     </main>
 
   
 
-    <dialog>
+    <dialog id="projeto">
       <i class="fa-solid fa-circle-xmark" id="fechardialog"></i>
       <i class="fa-brands fa-pix"></i>
      <p>Gostou do nosso projeto?</p>
@@ -111,8 +129,7 @@
             </ul>
         </div>
     </section>
-      
-
+    
 
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -177,6 +194,7 @@
 
 
   <script src="src/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.1/dist/sweetalert2.all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
